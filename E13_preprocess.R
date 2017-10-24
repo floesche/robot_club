@@ -3,7 +3,7 @@
 # Harvesting experimental data.
 
 # Make list of raw data files (i.e. psychopy outputs for each participant):
-rawfiles <- list.files(path = 'rawdata', full.names = TRUE)
+rawfiles <- list.files(path = 'E13_rawdata', full.names = TRUE)
 
 # Collate individual participant data (indivdata) into a single dataset of all 
 # experimental data (alldata):
@@ -154,6 +154,6 @@ rdata <- rdata[,c('partic','stage','block','trial','stim','resp','rt',
 rtestdata <- rdata[rdata$stage == 3, ]
 
 # This function creates the exported csv file:
-write.csv(rtestdata,'analysis/Exp13testdata.csv', row.names = FALSE)
+write.csv(rtestdata,'Exp13testdata.csv', row.names = FALSE)
 
-# thisisthewaterandthisisthewell
+# crossingat430
